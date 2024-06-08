@@ -1,6 +1,6 @@
 # Card-Hover⭐⭐⭐⭐☆
 
-![Banner](image/cap-counter.PNG)
+![Banner](cap-hover.PNG)
 <p align="center" style="color: white;">
     <img src="https://profile-counter.glitch.me/Juanes200122/count.svg" />
 </p>
