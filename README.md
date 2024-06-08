@@ -14,7 +14,7 @@
       <img src="https://img.shields.io/badge/-@jeacsi.official_022-purple?style=flat&logo=instagram&logoColor=white&link=https://www.instagram.com/jeacsi.official_022?igsh=MWJ6MHRwcnhoZXVxbQ==" alt="Instagram Badge">
     </a>
 </p>
-<p>Se a desarrollado una animación de contadores utilizando JavaScript puro, que se ejecuta al cargar la página. Esta animación permite incrementar los valores de los contadores de forma gradual hasta alcanzar un objetivo predefinido, ofreciendo una experiencia visual atractiva y dinámica.</p>
+<p>Se ha desarrollado una animación de tarjetas que se ilumina al hacer hover sobre ellas, utilizando JavaScript puro. Esta animación detecta la posición del cursor y aplica un efecto de iluminación gradual en el área debajo del mismo, creando una experiencia visual interactiva y dinámica.</p>
 
 <p>Visualizar trabajo en 
     <a href="https://codepen.io/Juan-Esteban-Ar-valo/pen/rNgMrOP" target="_blank">
@@ -24,8 +24,8 @@
 
 
 ```bash
-    git clone https://github.com/Juanes200122/Skills_Sections.git
-    cd Skills_Sections
+    git clone https://github.com/Juanes200122/Card-Hover.git
+    cd Card-Hover
 ```
 <div align="right">
     
@@ -38,27 +38,17 @@
 <img align="right" src="image/cap-countainer.gif" width="400"/>
 
 ```JS
-document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.counter h3');
-    const speed = 1200;
-
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const increment = target / speed;
-
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 1);
-            } else {
-                counter.innerText = target;
-            }
-        };
-
-        updateCount();
-    });
-});
+    let cards = document.querySelectorAll(".card");
+    
+    cards.forEach(card => {
+        card.onmousemove = function(e){
+            let x = e.pageX - card.offsetLeft;
+            let y = e.pageY - card.offsetTop;
+    
+            card.style.setProperty('--x', x + 'px');
+            card.style.setProperty('--y', y + 'px');
+        }
+    })
 ```
 
 </br>
