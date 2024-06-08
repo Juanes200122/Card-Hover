@@ -17,7 +17,7 @@
 <p>Se ha desarrollado una animación de tarjetas que se ilumina al hacer hover sobre ellas, utilizando JavaScript puro. Esta animación detecta la posición del cursor y aplica un efecto de iluminación gradual en el área debajo del mismo, creando una experiencia visual interactiva y dinámica.</p>
 
 <p>Visualizar trabajo en 
-    <a href="https://codepen.io/Juan-Esteban-Ar-valo/pen/rNgMrOP" target="_blank">
+    <a href="https://codepen.io/Juan-Esteban-Ar-valo/pen/MWdvoQj" target="_blank">
         <img src="https://img.shields.io/badge/-CodePen-000000?style=flat&logo=codepen" alt="CodePen">
     </a>
 </p>
